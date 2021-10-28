@@ -1,0 +1,56 @@
+.head{
+  height: 50px;
+  font-size: 50px;
+  background-color: #F0F3BD;
+}
+.sidebar{
+  width: 100%; /* change width */
+  color: white; /* chnage color */
+  float: top;
+  height: 80px; /* chnage height */
+  padding-right: 50px;
+}
+.sidebar.list{
+  align-items: center;
+}
+avatar{
+
+}
+body{
+  background-image: url("background.jpg"); /* url("folderName/imageFilename.correctformat"); */
+  background-repeat: no-repeat;/*don't repeat image */
+  background-size: cover;
+
+}
+
+*{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: inherit;
+}
+tr, td{
+  border-bottom: 1px solid #ddd;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 500px) {
+  .avatar{
+    display: none;
+  }
+  .sidebar.list{
+    align-items: left;
+  }
+  .about{
+    align-items: stretch;
+  }
+  .table, .th, .td {
+
+  }
+}
